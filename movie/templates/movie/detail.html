@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+        .row{
+            margin:0px auto;
+            width:700px
+        }
+    </style>
+</head>
+<!-- python manage.py runserver -->
+<body>
+     <div style="height:50px"></div>
+     <div class="container">
+         <div class="row">
+             <table class="table">
+                 <tr>
+                     <td class="text-center">
+                         <iframe src="http://youtube.com/embed/{{key}}" width="750" height="300"></iframe>
+                     </td>
+                 </tr>
+             </table>
+             <table class="table">
+                 <tr>
+                     <td>{{title}} <span class="color:orange">{{score}}</span></td>
+                 </tr>
+                 <tr>
+                     <td>{{story|slice:"300"}}</td>
+                 </tr>
+                 <tr>
+                     <td class="text-right">
+                         <a href="/movie/" class="btn btn-sm btn-primary">목록</a>
+                     </td>
+                 </tr>
+             </table>
+         </div>
+     </div>
+</body>
+</html>
